@@ -12,8 +12,17 @@ pipeline {
       }
     }
     stage('paso 3') {
-      steps {
-        sh 'ls -lrt'
+      parallel {
+        stage('paso 3') {
+          steps {
+            sh 'ls -lrt'
+          }
+        }
+        stage('paso 3.3') {
+          steps {
+            echo 'ejeje'
+          }
+        }
       }
     }
   }
