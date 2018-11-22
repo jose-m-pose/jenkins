@@ -8,7 +8,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'mvn --version'
+        retry(count: 3) {
+          sh 'mvn --version'
+        }
+
       }
     }
   }
