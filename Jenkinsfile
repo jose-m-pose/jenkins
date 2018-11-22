@@ -14,5 +14,13 @@ pipeline {
 
       }
     }
+    stage('post') {
+      steps {
+        script {
+          pip4
+        }
+
+      }
+    }
   }
 }
