@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Paso1') {
       steps {
-        git(url: 'some_url', branch: 'some_branch', credentialsId: 'some_id')
         sh 'git clone https://github.com/CGD14/PruebaDeEdu2.git'
       }
     }
