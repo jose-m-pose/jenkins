@@ -4,10 +4,10 @@ pipeline {
     stage('Paso1') {
       steps {
         sh 'cd /home/jpr'
+        sh 'ls -lrt'
         sh '''
 
 git clone https://github.com/CGD14/PruebaDeEdu2.git'''
-        sh 'ls -lrt'
       }
     }
     stage('paso 2') {
