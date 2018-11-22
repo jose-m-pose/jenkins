@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Paso1') {
       steps {
-        echo 'aqui en paso 1'
+        git(url: 'some_url', branch: 'some_branch', credentialsId: 'some_id')
       }
     }
     stage('paso 2') {
