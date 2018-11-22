@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Paso1') {
       steps {
-        sh 'cd /home/jpr'
+        sh 'pwd'
         sh 'ls -lrt'
         sh '''
 
