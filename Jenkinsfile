@@ -3,7 +3,11 @@ pipeline {
   stages {
     stage('Paso1') {
       steps {
-        sh 'git clone https://github.com/CGD14/PruebaDeEdu2.git'
+        sh 'cd /home/jpr'
+        sh '''
+
+git clone https://github.com/CGD14/PruebaDeEdu2.git'''
+        sh 'ls -lrt'
       }
     }
     stage('paso 2') {
